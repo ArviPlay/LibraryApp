@@ -115,5 +115,11 @@ namespace LibraryAppForProject
             PopularBooksReportForm popularBooksReportForm = new PopularBooksReportForm();
             popularBooksReportForm.ShowDialog();
         }
+
+        private void êîíñîëüSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SQLConsoleForm SQLConsoleForm = new SQLConsoleForm();
+            SQLConsoleForm.ShowDialog();
+        }
     }
 }

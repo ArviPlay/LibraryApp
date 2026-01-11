@@ -59,6 +59,8 @@ namespace LibraryAppForProject
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.инструментыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.консольSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -71,7 +73,8 @@ namespace LibraryAppForProject
             this.книгиToolStripMenuItem,
             this.клиентыToolStripMenuItem,
             this.выдачаToolStripMenuItem,
-            this.отчётыToolStripMenuItem});
+            this.отчётыToolStripMenuItem,
+            this.инструментыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(521, 24);
@@ -318,6 +321,21 @@ namespace LibraryAppForProject
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // инструментыToolStripMenuItem
+            // 
+            this.инструментыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.консольSQLToolStripMenuItem});
+            this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
+            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.инструментыToolStripMenuItem.Text = "Инструменты";
+            // 
+            // консольSQLToolStripMenuItem
+            // 
+            this.консольSQLToolStripMenuItem.Name = "консольSQLToolStripMenuItem";
+            this.консольSQLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.консольSQLToolStripMenuItem.Text = "Консоль SQL";
+            this.консольSQLToolStripMenuItem.Click += new System.EventHandler(this.консольSQLToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -375,5 +393,7 @@ namespace LibraryAppForProject
         private ToolStripStatusLabel toolStripStatusLabel3;
         private Label label1;
         private System.Windows.Forms.Timer timer1;
+        private ToolStripMenuItem инструментыToolStripMenuItem;
+        private ToolStripMenuItem консольSQLToolStripMenuItem;
     }
 }
