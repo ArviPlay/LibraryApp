@@ -1,7 +1,6 @@
-using LibraryAppForProject;
-using LibraryAppForProject.MenuStripBooks;
 using System;
 using System.Windows.Forms;
+using LibraryAppForProject.MenuStripForms;
 
 namespace LibraryAppForProject
 {

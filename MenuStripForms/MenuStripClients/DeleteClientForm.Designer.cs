@@ -1,4 +1,4 @@
-﻿namespace LibraryAppForProject.MenuStripBooks
+﻿namespace LibraryAppForProject.MenuStripForms
 {
     partial class DeleteClientForm
     {

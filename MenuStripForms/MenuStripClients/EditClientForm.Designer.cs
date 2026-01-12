@@ -1,4 +1,4 @@
-﻿namespace LibraryAppForProject.MenuStripBooks
+﻿namespace LibraryAppForProject.MenuStripForms
 {
     partial class EditClientForm
     {
@@ -99,7 +99,7 @@
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.phoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.phoneTextBox.AsciiOnly = true;
             this.phoneTextBox.Location = new System.Drawing.Point(66, 130);
@@ -122,7 +122,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nameTextBox.Location = new System.Drawing.Point(66, 78);
             this.nameTextBox.Name = "nameTextBox";

@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Таблица BOOKS
+    <value>Таблица Books
 Id INTEGER - Уникальный номер
 Author TEXT - Автор
 Title TEXT - Название
 
-Таблица CLIENTS
+Таблица Clients
 Id INTEGER - Уникальный номер
 Name TEXT - ФИО
 Phone TEXT - Телефон 
 BirthDate TEXT - Дата рождения ГГГГ-ММ-ДД
 
-Таблица ISSUES
+Таблица Issues
 IssueId INTEGER - Номер записи
 ClientId INTEGER - ID Клиента
 BookId INTEGER - ID Книги
@@ -137,7 +137,7 @@ BorrowDate TEXT - Дата выдачи
 DueDate TEXT - Срок возврата
 ReturnDate TEXT - Дата фактического возврата
 
-Таблица REPORTS
+Таблица Reports
 Id INTEGER - Номер записи
 Name TEXT - Название отчета
 Period TEXT - Период отчета
