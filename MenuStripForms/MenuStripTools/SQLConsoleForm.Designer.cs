@@ -1,4 +1,4 @@
-﻿namespace LibraryAppForProject.MenuStripBooks
+﻿namespace LibraryAppForProject.MenuStripForms
 {
     partial class SQLConsoleForm
     {
@@ -32,10 +32,10 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.executeButton = new System.Windows.Forms.Button();
-            this.codeTextBox = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clearButton = new System.Windows.Forms.Button();
+            this.codeTextBox = new System.Windows.Forms.TextBox();
+            this.executeButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -96,6 +96,26 @@
             this.splitContainer2.SplitterDistance = 139;
             this.splitContainer2.TabIndex = 0;
             // 
+            // clearButton
+            // 
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearButton.Location = new System.Drawing.Point(215, 101);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(125, 35);
+            this.clearButton.TabIndex = 20;
+            this.clearButton.Text = "Очистить";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // codeTextBox
+            // 
+            this.codeTextBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.codeTextBox.Location = new System.Drawing.Point(3, 3);
+            this.codeTextBox.Multiline = true;
+            this.codeTextBox.Name = "codeTextBox";
+            this.codeTextBox.Size = new System.Drawing.Size(337, 95);
+            this.codeTextBox.TabIndex = 0;
+            // 
             // executeButton
             // 
             this.executeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -106,15 +126,6 @@
             this.executeButton.Text = "Выполнить";
             this.executeButton.UseVisualStyleBackColor = true;
             this.executeButton.Click += new System.EventHandler(this.executeButton_Click);
-            // 
-            // codeTextBox
-            // 
-            this.codeTextBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.codeTextBox.Location = new System.Drawing.Point(3, 3);
-            this.codeTextBox.Multiline = true;
-            this.codeTextBox.Name = "codeTextBox";
-            this.codeTextBox.Size = new System.Drawing.Size(337, 95);
-            this.codeTextBox.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -128,17 +139,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(343, 218);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // clearButton
-            // 
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clearButton.Location = new System.Drawing.Point(215, 101);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(125, 35);
-            this.clearButton.TabIndex = 20;
-            this.clearButton.Text = "Очистить";
-            this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // SQLConsoleForm
             // 

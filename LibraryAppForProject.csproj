@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.11.2622, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.11\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
@@ -99,64 +102,64 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\AddBookForm.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\AddBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\AddBookForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\AddBookForm.Designer.cs">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\AddClientForm.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\AddClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\AddClientForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\AddClientForm.Designer.cs">
       <DependentUpon>AddClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\DeleteBookForm.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\DeleteBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\DeleteBookForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\DeleteBookForm.Designer.cs">
       <DependentUpon>DeleteBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\DeleteClientForm.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\DeleteClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\DeleteClientForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\DeleteClientForm.Designer.cs">
       <DependentUpon>DeleteClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\EditBookForm.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\EditBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\EditBookForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripBooks\EditBookForm.Designer.cs">
       <DependentUpon>EditBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\EditClientForm.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\EditClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\EditClientForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripClients\EditClientForm.Designer.cs">
       <DependentUpon>EditClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\IssueBookForm.cs">
+    <Compile Include="MenuStripForms\MenuStripIssues\IssueBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\IssueBookForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripIssues\IssueBookForm.Designer.cs">
       <DependentUpon>IssueBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\PopularBooksReportForm.cs">
+    <Compile Include="MenuStripForms\MenuStripReports\PopularBooksReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\PopularBooksReportForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripReports\PopularBooksReportForm.Designer.cs">
       <DependentUpon>PopularBooksReportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\ReturnBookForm.cs">
+    <Compile Include="MenuStripForms\MenuStripIssues\ReturnBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\ReturnBookForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripIssues\ReturnBookForm.Designer.cs">
       <DependentUpon>ReturnBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuStripBooks\SQLConsoleForm.cs">
+    <Compile Include="MenuStripForms\MenuStripTools\SQLConsoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripBooks\SQLConsoleForm.Designer.cs">
+    <Compile Include="MenuStripForms\MenuStripTools\SQLConsoleForm.Designer.cs">
       <DependentUpon>SQLConsoleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -179,34 +182,34 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\AddBookForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripBooks\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\AddClientForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripClients\AddClientForm.resx">
       <DependentUpon>AddClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\DeleteBookForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripBooks\DeleteBookForm.resx">
       <DependentUpon>DeleteBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\DeleteClientForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripClients\DeleteClientForm.resx">
       <DependentUpon>DeleteClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\EditBookForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripBooks\EditBookForm.resx">
       <DependentUpon>EditBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\EditClientForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripClients\EditClientForm.resx">
       <DependentUpon>EditClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\IssueBookForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripIssues\IssueBookForm.resx">
       <DependentUpon>IssueBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\PopularBooksReportForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripReports\PopularBooksReportForm.resx">
       <DependentUpon>PopularBooksReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\ReturnBookForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripIssues\ReturnBookForm.resx">
       <DependentUpon>ReturnBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuStripBooks\SQLConsoleForm.resx">
+    <EmbeddedResource Include="MenuStripForms\MenuStripTools\SQLConsoleForm.resx">
       <DependentUpon>SQLConsoleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -234,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />

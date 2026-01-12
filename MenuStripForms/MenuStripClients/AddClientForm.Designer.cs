@@ -1,6 +1,6 @@
-﻿namespace LibraryAppForProject.MenuStripBooks
+﻿namespace LibraryAppForProject.MenuStripForms
 {
-    partial class IssueBookForm
+    partial class AddClientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.clientComboBox = new System.Windows.Forms.ComboBox();
-            this.bookComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.phoneTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.borrowBookdtp = new System.Windows.Forms.DateTimePicker();
-            this.dueBookdtp = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.issueButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameTextBox.Location = new System.Drawing.Point(66, 38);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(151, 20);
+            this.nameTextBox.TabIndex = 3;
             // 
             // label1
             // 
@@ -49,36 +56,31 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 26);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Клиент";
+            this.label1.Text = "ФИО";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // clientComboBox
-            // 
-            this.clientComboBox.FormattingEnabled = true;
-            this.clientComboBox.Location = new System.Drawing.Point(36, 38);
-            this.clientComboBox.Name = "clientComboBox";
-            this.clientComboBox.Size = new System.Drawing.Size(211, 21);
-            this.clientComboBox.TabIndex = 3;
-            // 
-            // bookComboBox
-            // 
-            this.bookComboBox.FormattingEnabled = true;
-            this.bookComboBox.Location = new System.Drawing.Point(36, 91);
-            this.bookComboBox.Name = "bookComboBox";
-            this.bookComboBox.Size = new System.Drawing.Size(211, 21);
-            this.bookComboBox.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(9, 62);
+            this.label2.Location = new System.Drawing.Point(9, 61);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(266, 26);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Книга";
+            this.label2.Text = "Телефон";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // phoneTextBox
+            // 
+            this.phoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneTextBox.AsciiOnly = true;
+            this.phoneTextBox.Location = new System.Drawing.Point(66, 90);
+            this.phoneTextBox.Mask = "+7 (000) 000-00-00";
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(151, 20);
+            this.phoneTextBox.TabIndex = 5;
             // 
             // label3
             // 
@@ -89,94 +91,71 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(266, 26);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Дата выдачи";
+            this.label3.Text = "Дата рождения";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
+            // dateTimePicker1
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(9, 166);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(266, 26);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Вернуть до";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // borrowBookdtp
-            // 
-            this.borrowBookdtp.Location = new System.Drawing.Point(36, 143);
-            this.borrowBookdtp.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.borrowBookdtp.Name = "borrowBookdtp";
-            this.borrowBookdtp.Size = new System.Drawing.Size(211, 20);
-            this.borrowBookdtp.TabIndex = 14;
-            // 
-            // dueBookdtp
-            // 
-            this.dueBookdtp.Location = new System.Drawing.Point(36, 195);
-            this.dueBookdtp.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dueBookdtp.Name = "dueBookdtp";
-            this.dueBookdtp.Size = new System.Drawing.Size(211, 20);
-            this.dueBookdtp.TabIndex = 14;
+            this.dateTimePicker1.Location = new System.Drawing.Point(66, 142);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
+            this.dateTimePicker1.TabIndex = 7;
             // 
             // cancelButton
             // 
             this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cancelButton.Location = new System.Drawing.Point(65, 265);
+            this.cancelButton.Location = new System.Drawing.Point(66, 212);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(151, 38);
-            this.cancelButton.TabIndex = 17;
+            this.cancelButton.TabIndex = 9;
             this.cancelButton.Text = "Отмена";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // issueButton
+            // addButton
             // 
-            this.issueButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.issueButton.Location = new System.Drawing.Point(65, 221);
-            this.issueButton.Name = "issueButton";
-            this.issueButton.Size = new System.Drawing.Size(151, 38);
-            this.issueButton.TabIndex = 16;
-            this.issueButton.Text = "Выдать";
-            this.issueButton.UseVisualStyleBackColor = true;
-            this.issueButton.Click += new System.EventHandler(this.issueButton_Click);
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addButton.Location = new System.Drawing.Point(66, 168);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(151, 38);
+            this.addButton.TabIndex = 8;
+            this.addButton.Text = "Добавить";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // IssueBookForm
+            // AddClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 311);
+            this.ClientSize = new System.Drawing.Size(284, 259);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.issueButton);
-            this.Controls.Add(this.dueBookdtp);
-            this.Controls.Add(this.borrowBookdtp);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.bookComboBox);
+            this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.clientComboBox);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "IssueBookForm";
+            this.Name = "AddClientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Выдать книгу";
+            this.Text = "Добавить клиента";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox clientComboBox;
-        private System.Windows.Forms.ComboBox bookComboBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox phoneTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker borrowBookdtp;
-        private System.Windows.Forms.DateTimePicker dueBookdtp;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button issueButton;
+        private System.Windows.Forms.Button addButton;
     }
 }

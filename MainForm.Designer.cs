@@ -32,6 +32,7 @@ namespace LibraryAppForProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.книгиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +47,8 @@ namespace LibraryAppForProject
             this.принятьКнигуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.популярныеКнигиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.инструментыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.консольSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateAndTimeLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -59,8 +62,6 @@ namespace LibraryAppForProject
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.инструментыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.консольSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -181,6 +182,21 @@ namespace LibraryAppForProject
             this.популярныеКнигиToolStripMenuItem.Text = "Популярные книги";
             this.популярныеКнигиToolStripMenuItem.Click += new System.EventHandler(this.популярныеКнигиToolStripMenuItem_Click);
             // 
+            // инструментыToolStripMenuItem
+            // 
+            this.инструментыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.консольSQLToolStripMenuItem});
+            this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
+            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.инструментыToolStripMenuItem.Text = "Инструменты";
+            // 
+            // консольSQLToolStripMenuItem
+            // 
+            this.консольSQLToolStripMenuItem.Name = "консольSQLToolStripMenuItem";
+            this.консольSQLToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.консольSQLToolStripMenuItem.Text = "Консоль SQL";
+            this.консольSQLToolStripMenuItem.Click += new System.EventHandler(this.консольSQLToolStripMenuItem_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -195,9 +211,9 @@ namespace LibraryAppForProject
             // 
             this.dateAndTimeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateAndTimeLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateAndTimeLabel.Location = new System.Drawing.Point(-123, 0);
+            this.dateAndTimeLabel.Location = new System.Drawing.Point(0, 0);
             this.dateAndTimeLabel.Name = "dateAndTimeLabel";
-            this.dateAndTimeLabel.Size = new System.Drawing.Size(767, 50);
+            this.dateAndTimeLabel.Size = new System.Drawing.Size(521, 50);
             this.dateAndTimeLabel.TabIndex = 0;
             this.dateAndTimeLabel.Text = "6 ноября 2025 10:41";
             this.dateAndTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,21 +337,6 @@ namespace LibraryAppForProject
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // инструментыToolStripMenuItem
-            // 
-            this.инструментыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.консольSQLToolStripMenuItem});
-            this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
-            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.инструментыToolStripMenuItem.Text = "Инструменты";
-            // 
-            // консольSQLToolStripMenuItem
-            // 
-            this.консольSQLToolStripMenuItem.Name = "консольSQLToolStripMenuItem";
-            this.консольSQLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.консольSQLToolStripMenuItem.Text = "Консоль SQL";
-            this.консольSQLToolStripMenuItem.Click += new System.EventHandler(this.консольSQLToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -346,6 +347,7 @@ namespace LibraryAppForProject
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(537, 464);
