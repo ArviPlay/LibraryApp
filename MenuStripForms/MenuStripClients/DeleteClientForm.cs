@@ -78,5 +78,10 @@ namespace LibraryAppForProject.MenuStripForms
                 }
             }
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
