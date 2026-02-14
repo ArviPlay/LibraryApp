@@ -87,6 +87,7 @@ namespace LibraryAppForProject
             this.Controls.Add(this.dataGridView1);
             this.MinimumSize = new System.Drawing.Size(602, 378);
             this.Name = "BooksForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Книги";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
