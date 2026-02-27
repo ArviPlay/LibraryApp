@@ -83,7 +83,7 @@ namespace LibraryAppForProject
             // 
             // clientNameColumn
             // 
-            this.clientNameColumn.HeaderText = "Имя клиента";
+            this.clientNameColumn.HeaderText = "ФИО клиента";
             this.clientNameColumn.Name = "clientNameColumn";
             this.clientNameColumn.ReadOnly = true;
             this.clientNameColumn.Width = 120;
